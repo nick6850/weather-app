@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form>
+        <input type="text" name="city" id="city" placeholder="Type your city...">
+        <button>Search</button>
+        <input type="radio" name="temperature" id="celcius" checked="checked" value="celc">
+        <label for="celcius">Celsius</label>
+        <input type="radio" name="temperature" id="fahrenheit"  value="fahr">
+        <label for="fahrenheit">Fahrenheit</label>
+    </form>
+    <div id="weather"></div>
+</body>
+</html>
