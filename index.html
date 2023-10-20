@@ -6,16 +6,23 @@
     <title>Weather app</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
 <body>
-    <form>
-        <input type="text" name="city" id="city" placeholder="Type your city...">
-        <button>Search</button>
-        <input type="radio" name="temperature" id="celcius" checked="checked" value="celc">
-        <label for="celcius">Celsius</label>
-        <input type="radio" name="temperature" id="fahrenheit"  value="fahr">
-        <label for="fahrenheit">Fahrenheit</label>
-    </form>
-    <div id="weather"></div>
+    <div class="container">
+        <form>
+            <input type="text" name="city" id="city" placeholder="Type your city...">
+            <button>Search</button>
+            <div class="radios">
+                <input type="radio" name="temperature" id="celcius" checked="checked" value="celc">
+                <label for="celcius">Celsius</label>
+                <input type="radio" name="temperature" id="fahrenheit"  value="fahr">
+                <label for="fahrenheit">Fahrenheit</label>
+            </div>
+        </form>
+        <div id="weather"></div>
+    </div>
 </body>
 </html>
